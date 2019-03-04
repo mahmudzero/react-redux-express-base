@@ -1,7 +1,11 @@
 var path = require('path');
 
 module.exports = {
-  entry: ['./frontend/app.js', './frontend/scss/index.scss'],
+  entry: [
+    'babel-polyfill',
+    './frontend/app.js',
+    './frontend/scss/index.scss'
+  ],
   output: {
     filename: 'javascripts/bundle.js',
     path: path.resolve(__dirname, 'public'),

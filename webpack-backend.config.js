@@ -4,7 +4,7 @@ var fs = require('fs');
 
 module.exports = {
   target: 'node',
-  entry: './bin/www.js',
+  entry: ['babel-polyfill', './bin/www.js'],
   externals: getNodeModules(),
   output: {
     filename: 'server',

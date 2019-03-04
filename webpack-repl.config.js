@@ -4,7 +4,7 @@ var fs = require('fs');
 
 module.exports = {
   target: 'node',
-  entry: './repl.js',
+  entry: ['babel-polyfill', './repl.js'],
   externals: getNodeModules(),
   output: {
     filename: 'repl',
